@@ -68,6 +68,7 @@ extension VideoLoadManager: VideoLoaderDelegate {
     }
     
     func loaderDidFinish(_ loader: VideoLoader) {
-        loaderMap.removeValue(forKey: loader.url)
+        //Fixing issue for Freeze Video
+//        loaderMap.removeValue(forKey: loader.url)
     }
 }

@@ -207,6 +207,11 @@ open class VideoPlayerView: UIView {
         resume()
     }
     
+    /// Reset  replay count.
+     open func resetReplayCount() {
+        replayCount = 0
+        player?.seek(to: .zero)
+    }
     /// Continue playing video.
     open func resume() {
         pausedReason = .waitingKeepUp
